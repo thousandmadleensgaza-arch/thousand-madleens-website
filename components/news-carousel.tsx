@@ -29,15 +29,15 @@ export default function NewsCarousel() {
   const [progress, setProgress] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  const newsArticles = content.news.articles;
+  const { title, description, articles } = content.news;
 
   // Split articles into sets of 2 (2 rows, 1 column)
   const articlesPerSet = 2;
-  const totalSets = Math.ceil(newsArticles.length / articlesPerSet);
+  const totalSets = Math.ceil(articles.length / articlesPerSet);
 
   const getCurrentArticles = () => {
     const start = currentSet * articlesPerSet;
-    return newsArticles.slice(start, start + articlesPerSet);
+    return articles.slice(start, start + articlesPerSet);
   };
 
   const nextSet = () => {
@@ -79,11 +79,9 @@ export default function NewsCarousel() {
         >
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              Latest News
+              {title}
             </h2>
-            <p className="text-lg text-gray-700 mb-8">
-              Stay updated with the latest developments in our mission to Gaza
-            </p>
+            <p className="text-lg text-gray-700 mb-8">{description}</p>
 
             {/* Controls and Timer */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8">
@@ -217,8 +215,9 @@ export default function NewsCarousel() {
                                   variant="outline"
                                   size="sm"
                                   className={`${article.buttonColor} bg-transparent transition-all duration-300 hover:shadow-md`}
+                                  disabled
                                 >
-                                  Read More
+                                  Coming Soon
                                   <ExternalLink className="ml-2 h-4 w-4" />
                                 </Button>
                               )}

@@ -11,7 +11,7 @@ import content from '../content.json';
 
 export default function InteractiveMap() {
   const [selectedLocation, setSelectedLocation] = useState<number | null>(null);
-  const locations = content.map.locations;
+  const { locations, registerButton } = content.map;
 
   return (
     <div className="w-full">
@@ -25,7 +25,7 @@ export default function InteractiveMap() {
         >
           <Globe className="h-5 w-5 text-green-600" />
           <span className="text-sm font-medium text-gray-700">
-            Global Departure Points
+            {content.map.title}
           </span>
         </motion.div>
       </div>
@@ -179,17 +179,14 @@ export default function InteractiveMap() {
         >
           <Card className="bg-gradient-to-r from-gray-50 to-gray-100 border-gray-200">
             <CardContent className="p-3 sm:p-4 lg:p-6 text-center">
-              <Link
-                href="https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/"
-                target="_blank"
-              >
+              <Link href={registerButton.href} target="_blank">
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm py-2 sm:py-3">
                   <Navigation className="mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                  Register Your Ship
+                  {registerButton.label}
                 </Button>
               </Link>
               <div className="text-xs text-gray-500 mt-2">
-                Add your departure location
+                {registerButton.description}
               </div>
             </CardContent>
           </Card>
