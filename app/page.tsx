@@ -41,27 +41,6 @@ import { RiTiktokLine, RiTelegram2Line } from 'react-icons/ri';
 import { toast } from 'sonner';
 import content from '../content.json';
 
-// Icon mapping for dynamic icon rendering
-const iconMap = {
-  Ship,
-  Heart,
-  Users,
-  Megaphone,
-  Mail,
-  MapPin,
-  Twitter,
-  Instagram,
-  ExternalLink,
-  Anchor,
-  Globe,
-  HandHeart,
-  MessageSquare,
-  AlertTriangle,
-  Clipboard,
-  RiTiktokLine,
-  RiTelegram2Line,
-};
-
 export default function MadleensGazaLanding() {
   const [activeRole, setActiveRole] = useState('sailors');
   const campaignMessage = content.site.campaignMessage;
