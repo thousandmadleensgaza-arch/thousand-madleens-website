@@ -1,89 +1,17 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Navigation, Ship, Globe } from "lucide-react";
-import Link from "next/link";
-
-const locations = [
-  {
-    id: 1,
-    country: "United Kingdom",
-    ships: 0,
-    status: "Organizing",
-    statusColor: "bg-green-100 text-green-800",
-    lat: 50.8198,
-    lng: -1.088,
-    color: "red",
-    joinLink:
-      "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866",
-  },
-  {
-    id: 2,
-    country: "France",
-    ships: 5,
-    status: "Preparing",
-    statusColor: "bg-blue-100 text-blue-800",
-    lat: 43.2965,
-    lng: 5.3698,
-    color: "green",
-    joinLink: "https://thousandmadleens.fr/",
-  },
-  {
-    id: 3,
-    country: "Malaysia",
-    ships: 0,
-    status: "Planning",
-    statusColor: "bg-yellow-100 text-yellow-800",
-    lat: 3.0044,
-    lng: 101.3997,
-    color: "black",
-    joinLink:
-      "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866",
-  },
-  {
-    id: 4,
-    country: "Turkey",
-    ships: 0,
-    status: "Ready",
-    statusColor: "bg-green-100 text-green-800",
-    lat: 41.0082,
-    lng: 28.9784,
-    color: "red",
-    joinLink:
-      "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866",
-  },
-  {
-    id: 5,
-    country: "Spain",
-    ships: 0,
-    status: "Organizing",
-    statusColor: "bg-yellow-100 text-yellow-800",
-    lat: 41.3851,
-    lng: 2.1734,
-    color: "green",
-    joinLink:
-      "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866",
-  },
-  {
-    id: 6,
-    country: "Norway",
-    ships: 0,
-    status: "Planning",
-    statusColor: "bg-blue-100 text-blue-800",
-    lat: 59.9139,
-    lng: 10.7522,
-    color: "black",
-    joinLink:
-      "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866",
-  },
-];
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Navigation, Ship, Globe } from 'lucide-react';
+import Link from 'next/link';
+import content from '../content.json';
 
 export default function InteractiveMap() {
   const [selectedLocation, setSelectedLocation] = useState<number | null>(null);
+  const locations = content.map.locations;
 
   return (
     <div className="w-full">
@@ -114,9 +42,9 @@ export default function InteractiveMap() {
           >
             <Card
               className={`border-${
-                location.color === "black" ? "gray" : location.color
+                location.color === 'black' ? 'gray' : location.color
               }-200 ${
-                selectedLocation === location.id ? "ring-2 ring-blue-500" : ""
+                selectedLocation === location.id ? 'ring-2 ring-blue-500' : ''
               } cursor-pointer hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
               onClick={() =>
                 setSelectedLocation(
@@ -127,12 +55,12 @@ export default function InteractiveMap() {
               <CardHeader className="pb-1 sm:pb-2 lg:pb-3 px-2 sm:px-4 lg:px-6 pt-2 sm:pt-4 lg:pt-6">
                 <CardTitle
                   className={`flex items-center text-${
-                    location.color === "black" ? "gray-800" : location.color
+                    location.color === 'black' ? 'gray-800' : location.color
                   }-700 text-sm sm:text-base lg:text-lg`}
                 >
                   <div
                     className={`w-1.5 h-1.5 sm:w-2 sm:h-2 lg:w-3 lg:h-3 bg-${
-                      location.color === "black" ? "gray-800" : location.color
+                      location.color === 'black' ? 'gray-800' : location.color
                     }-600 rounded-full mr-1.5 sm:mr-2 lg:mr-3`}
                   ></div>
                   <span className="truncate">{location.country}</span>
@@ -156,7 +84,7 @@ export default function InteractiveMap() {
                     <motion.div
                       className="mt-2 sm:mt-3 lg:mt-4 pt-2 sm:pt-3 border-t border-gray-200"
                       initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
+                      animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
                     >
                       <div className="space-y-0.5 sm:space-y-1 lg:space-y-2 text-xs text-gray-600">
@@ -169,12 +97,12 @@ export default function InteractiveMap() {
                         <Button
                           size="sm"
                           className={`w-full mt-1.5 sm:mt-2 lg:mt-3 text-xs lg:text-sm bg-${
-                            location.color === "black"
-                              ? "gray-800"
+                            location.color === 'black'
+                              ? 'gray-800'
                               : location.color
                           }-600 hover:bg-${
-                            location.color === "black"
-                              ? "gray-700"
+                            location.color === 'black'
+                              ? 'gray-700'
                               : location.color
                           }-700 text-white py-1.5 sm:py-2`}
                         >

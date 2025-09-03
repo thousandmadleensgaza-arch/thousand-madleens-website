@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import {
   MapPin,
   Globe,
@@ -13,93 +13,23 @@ import {
   ChevronLeft,
   ChevronRight,
   Clock,
-} from "lucide-react";
-import Link from "next/link";
+} from 'lucide-react';
+import Link from 'next/link';
+import content from '../content.json';
 
-const newsArticles = [
-  {
-    id: 1,
-    title: "THE 1000 FLOTILLA INITIATIVE TO BREAK THE SIEGE",
-    image:
-      "https://mapim.org.my/wp-content/uploads/2025/06/THE-1000-FLOTILLA-INITIATIVE-TO-BREAK-THE-SIEGE-1200x480.png",
-    description:
-      "A comprehensive look at the ambitious campaign to organize 1000 ships from around the world in solidarity with Gaza, breaking the blockade through peaceful maritime resistance.",
-    source: "MAPIM",
-    sourceIcon: MapPin,
-    badge: "Breaking News",
-    badgeColor: "bg-green-600",
-    borderColor: "border-green-200",
-    buttonColor: "border-green-600 text-green-600 hover:bg-green-50",
-    link: "https://mapim.org.my/2025/06/13/the-1000-flotilla-initiative-to-break-the-siege/",
-  },
-  {
-    id: 2,
-    title:
-      "A Thousand Madleens: New Civilian Fleet Readies to Defy Israeli Blockade",
-    image:
-      "https://qudsnen.co/wp-content/uploads/2025/06/IMG_5537-780x432.jpeg",
-    description:
-      "International civil society prepares an unprecedented maritime flotilla as civilians worldwide unite to challenge the blockade of Gaza through coordinated peaceful action.",
-    source: "Quds News",
-    sourceIcon: Globe,
-    badge: "Featured",
-    badgeColor: "bg-green-600",
-    borderColor: "border-green-200",
-    buttonColor: "border-green-600 text-green-600 hover:bg-green-50",
-    link: "https://qudsnen.co/a-thousand-madleens-new-civilian-fleet-readies-to-defy-israeli-blockade/",
-  },
-  {
-    id: 3,
-    title: "Swindon Fete to Fund Aid Volunteer's Gaza Flotilla Journey",
-    image:
-      "https://unsplash.com/photos/D9lCSvUcErk/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzU1MzUxMDk5fA&force=true&w=640",
-    description:
-      "A summer fete by Swindon Palestine Solidarity aims to raise funds for volunteer Liaquth Ali's participation in the 'A Thousand Madleens to Gaza' flotilla, featuring family-friendly activities and cultural events.",
-    source: "Local Community",
-    sourceIcon: Users,
-    badge: "Community",
-    badgeColor: "bg-blue-600",
-    borderColor: "border-blue-200",
-    buttonColor: "border-blue-600 text-blue-600 hover:bg-blue-50",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Flotilla for Palestine: Support Center for Gaza Opens in Nice",
-    image:
-      "https://www.nice-premium.com/wp-content/uploads/2025/08/image-57-1068x601.jpg",
-    description:
-      "Thousand Madleens Nice opens its doors as a support center following the return of the Madleen crew and Soumoud caravan, establishing a base for raising awareness about the Gaza flotilla movement.",
-    source: "Nice Premium",
-    sourceIcon: MapPin,
-    badge: "Local News",
-    badgeColor: "bg-purple-600",
-    borderColor: "border-purple-200",
-    buttonColor: "border-purple-600 text-purple-600 hover:bg-purple-50",
-    link: "#",
-  },
-  {
-    id: 5,
-    title:
-      "'Thousand Ship Flotilla' Announced to Challenge Israel's Gaza Blockade",
-    image:
-      "https://i0.wp.com/www.middleeastmonitor.com/wp-content/uploads/2025/06/GettyImages-2218796600.jpg?fit=920%2C613&ssl=1",
-    description:
-      "Malaysian civil society coalition led by MAPIM announces the largest maritime mobilization of its kind, aiming to send vessels from across the globe carrying humanitarian aid to Gaza in defiance of Israel's naval embargo.",
-    source: "Middle East Monitor",
-    sourceIcon: Globe,
-    badge: "Major Announcement",
-    badgeColor: "bg-red-600",
-    borderColor: "border-red-200",
-    buttonColor: "border-red-600 text-red-600 hover:bg-red-50",
-    link: "#",
-  },
-];
+// Icon mapping for dynamic icon rendering
+const iconMap = {
+  MapPin,
+  Globe,
+  Users,
+};
 
 export default function NewsCarousel() {
   const [currentSet, setCurrentSet] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+
+  const newsArticles = content.news.articles;
 
   // Split articles into sets of 2 (2 rows, 1 column)
   const articlesPerSet = 2;
@@ -205,7 +135,7 @@ export default function NewsCarousel() {
               onClick={() => setIsPaused(!isPaused)}
               className="text-gray-600 hover:text-green-600 hover:bg-green-50"
             >
-              {isPaused ? "Resume Auto-Switch" : "Pause Auto-Switch"}
+              {isPaused ? 'Resume Auto-Switch' : 'Pause Auto-Switch'}
             </Button>
           </div>
 
@@ -221,12 +151,13 @@ export default function NewsCarousel() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ duration: 0.5, ease: 'easeInOut' }}
                 className="grid grid-cols-1 gap-4 md:gap-6 max-w-4xl mx-auto"
               >
                 {getCurrentArticles().map((article, index) => {
-                  const SourceIcon = article.sourceIcon;
-                  const isExternal = article.link.startsWith("http");
+                  const SourceIcon =
+                    iconMap[article.sourceIcon as keyof typeof iconMap];
+                  const isExternal = article.link.startsWith('http');
 
                   return (
                     <motion.div
@@ -317,8 +248,8 @@ export default function NewsCarousel() {
                 }}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentSet
-                    ? "bg-green-600 scale-125"
-                    : "bg-gray-300 hover:bg-gray-400"
+                    ? 'bg-green-600 scale-125'
+                    : 'bg-gray-300 hover:bg-gray-400'
                 }`}
               />
             ))}

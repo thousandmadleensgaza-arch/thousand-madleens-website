@@ -1,24 +1,24 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import InteractiveMap from "@/components/interactive-map";
-import NewsCarousel from "@/components/news-carousel";
+} from '@/components/ui/accordion';
+import InteractiveMap from '@/components/interactive-map';
+import NewsCarousel from '@/components/news-carousel';
 import {
   Ship,
   Heart,
@@ -35,16 +35,36 @@ import {
   MessageSquare,
   AlertTriangle,
   Clipboard,
-} from "lucide-react";
-import Link from "next/link";
-import { RiTiktokLine, RiTelegram2Line } from "react-icons/ri";
-import { toast } from "sonner";
+} from 'lucide-react';
+import Link from 'next/link';
+import { RiTiktokLine, RiTelegram2Line } from 'react-icons/ri';
+import { toast } from 'sonner';
+import content from '../content.json';
+
+// Icon mapping for dynamic icon rendering
+const iconMap = {
+  Ship,
+  Heart,
+  Users,
+  Megaphone,
+  Mail,
+  MapPin,
+  Twitter,
+  Instagram,
+  ExternalLink,
+  Anchor,
+  Globe,
+  HandHeart,
+  MessageSquare,
+  AlertTriangle,
+  Clipboard,
+  RiTiktokLine,
+  RiTelegram2Line,
+};
 
 export default function MadleensGazaLanding() {
-  const [activeRole, setActiveRole] = useState("sailors");
-
-  const campaignMessage =
-    "Join the historic #1000MadleensToGaza flotilla! 🚢 Breaking the blockade through peaceful solidarity. Together we sail for justice and human rights. #FreePalestine #BreakTheBlockade";
+  const [activeRole, setActiveRole] = useState('sailors');
+  const campaignMessage = content.site.campaignMessage;
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
@@ -164,7 +184,7 @@ export default function MadleensGazaLanding() {
                 </Link>
                 <Link
                   target="_blank"
-                  href={"https://linktr.ee/thousand.madleens"}
+                  href={'https://linktr.ee/thousand.madleens'}
                 >
                   <Button
                     size="lg"
@@ -262,7 +282,7 @@ export default function MadleensGazaLanding() {
               <motion.div
                 className="text-center"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 <div className="flex items-center justify-center mx-auto mb-6">
                   <Ship className="h-16 w-16 text-green-600" />
@@ -280,7 +300,7 @@ export default function MadleensGazaLanding() {
               <motion.div
                 className="text-center"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 <div className="flex items-center justify-center mx-auto mb-6">
                   <Anchor className="h-16 w-16 text-green-600" />
@@ -298,7 +318,7 @@ export default function MadleensGazaLanding() {
               <motion.div
                 className="text-center"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 <div className="flex items-center justify-center mx-auto mb-6">
                   <Users className="h-16 w-16 text-green-600" />
@@ -791,7 +811,7 @@ export default function MadleensGazaLanding() {
                 target="_blank"
                 className="flex flex-col items-center p-2 sm:p-4 lg:p-6 bg-gray-800 hover:bg-gray-700 transition-colors"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 <RiTiktokLine className="h-6 w-6 sm:h-8 sm:w-8 lg:h-12 lg:w-12 text-black-400 mb-1 sm:mb-2 lg:mb-3" />
                 <span className="font-semibold text-xs sm:text-sm lg:text-base">
@@ -807,7 +827,7 @@ export default function MadleensGazaLanding() {
                 className="flex flex-col items-center p-2 sm:p-4 lg:p-6 bg-gray-800 hover:bg-gray-700 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 target="_blank"
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 <Twitter className="h-6 w-6 sm:h-8 sm:w-8 lg:h-12 lg:w-12 text-blue-400 mb-1 sm:mb-2 lg:mb-3" />
                 <span className="font-semibold text-xs sm:text-sm lg:text-base">
@@ -823,7 +843,7 @@ export default function MadleensGazaLanding() {
                 target="_blank"
                 className="flex flex-col items-center p-2 sm:p-4 lg:p-6 bg-gray-800 hover:bg-gray-700 transition-colors"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 <Instagram className="h-6 w-6 sm:h-8 sm:w-8 lg:h-12 lg:w-12 text-pink-400 mb-1 sm:mb-2 lg:mb-3" />
                 <span className="font-semibold text-xs sm:text-sm lg:text-base">
@@ -839,7 +859,7 @@ export default function MadleensGazaLanding() {
                 target="_blank"
                 className="flex flex-col items-center p-2 sm:p-4 lg:p-6 bg-gray-800 hover:bg-gray-700 transition-colors"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 <RiTelegram2Line className="h-6 w-6 sm:h-8 sm:w-8 lg:h-12 lg:w-12 text-blue-400 mb-1 sm:mb-2 lg:mb-3" />
                 <span className="font-semibold text-xs sm:text-sm lg:text-base">
@@ -868,7 +888,7 @@ export default function MadleensGazaLanding() {
                   className="bg-green-600 hover:bg-green-700 text-xs sm:text-sm px-3 py-2"
                   onClick={async () => {
                     await navigator.clipboard.writeText(campaignMessage);
-                    toast.success("Message copied to clipboard!");
+                    toast.success('Message copied to clipboard!');
                   }}
                 >
                   <Clipboard className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
@@ -880,13 +900,13 @@ export default function MadleensGazaLanding() {
                   className="border-white text-white hover:bg-white hover:text-black bg-transparent text-xs sm:text-sm px-3 py-2"
                   onClick={() => {
                     const subject = encodeURIComponent(
-                      "Join the 1000 Madleens to Gaza Campaign"
+                      'Join the 1000 Madleens to Gaza Campaign'
                     );
                     const body = encodeURIComponent(
                       `${campaignMessage}\n\nLearn more and get involved: ${window.location.href}`
                     );
                     window.open(`mailto:?subject=${subject}&body=${body}`);
-                    toast.info("Email client opened");
+                    toast.info('Email client opened');
                   }}
                 >
                   <Mail className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
@@ -1113,7 +1133,7 @@ export default function MadleensGazaLanding() {
                 className="hover:text-green-400 transition-colors ml-1"
               >
                 Privacy Policy
-              </a>{" "}
+              </a>{' '}
               |
               <a
                 href="#"

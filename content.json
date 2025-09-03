@@ -1,0 +1,607 @@
+{
+    "site": {
+        "title": "1000 Madleens to Gaza",
+        "description": "Breaking the blockade through peaceful solidarity and international cooperation.",
+        "campaignMessage": "Join the historic #1000MadleensToGaza flotilla! 🚢 Breaking the blockade through peaceful solidarity. Together we sail for justice and human rights. #FreePalestine #BreakTheBlockade"
+    },
+    "navigation": {
+        "logo": {
+            "src": "/navbar_logo_no_bg.png",
+            "alt": "1000 Madleens to Gaza Logo"
+        },
+        "menuItems": [
+            {
+                "label": "Mission",
+                "href": "#mission"
+            },
+            {
+                "label": "Goals",
+                "href": "#goals"
+            },
+            {
+                "label": "Get Involved",
+                "href": "#get-involved"
+            },
+            {
+                "label": "News",
+                "href": "#news"
+            },
+            {
+                "label": "FAQ",
+                "href": "#faq"
+            }
+        ],
+        "buttons": [
+            {
+                "label": "Join the Movement",
+                "shortLabel": "Join",
+                "href": "https://linktr.ee/thousand.madleens",
+                "style": "primary"
+            },
+            {
+                "label": "Donate",
+                "href": "https://chuffed.org/project/138012-a-thousand-madleens-to-gaza",
+                "style": "primary"
+            }
+        ]
+    },
+    "hero": {
+        "backgroundImage": {
+            "src": "thousand-madleens-banner.jpg",
+            "alt": "Sailboat with Palestinian flag sailing on the Mediterranean Sea - 1000 Madleens to Gaza campaign"
+        },
+        "title": "1000 Madleens to Gaza",
+        "subtitle": "Breaking the Blockage",
+        "tagline": "1000 Ships. One Mission. Free Gaza.",
+        "description": "A global maritime flotilla campaign to break the blockade of Gaza through peaceful solidarity. Inspired by resilience, driven by hope, united in action.",
+        "buttons": [
+            {
+                "label": "Support the Mission",
+                "href": "https://chuffed.org/project/138012-a-thousand-madleens-to-gaza",
+                "icon": "HandHeart",
+                "style": "primary"
+            },
+            {
+                "label": "Join Community",
+                "href": "https://linktr.ee/thousand.madleens",
+                "icon": "Users",
+                "style": "outline"
+            }
+        ]
+    },
+    "mission": {
+        "title": "Our Mission",
+        "description": "A tribute to the resilience and patience of the people of Gaza, and a collective movement to stand alongside them.",
+        "cards": [
+            {
+                "title": "Tribute to Resilience",
+                "icon": "Heart",
+                "description": "The \"Madleen\" represents the unwavering spirit of the Palestinians who refuse to accept injustice. Our campaign honors the courage of all who have sailed these waters before us, carrying hope across the Mediterranean."
+            },
+            {
+                "title": "Global Solidarity",
+                "icon": "Globe",
+                "description": "From every corner of the world, we unite in peaceful resistance. 1000 ships from many nations will converge to break the Israeli genocidal blockade through the power of international civil society."
+            }
+        ]
+    },
+    "goals": {
+        "title": "Goals & Organization",
+        "description": "Our mission is organized around clear objectives and coordinated international action.",
+        "items": [
+            {
+                "title": "Maritime Flotilla",
+                "icon": "Ship",
+                "description": "Coordinate 1000 ships from multiple nations to converge and sail together toward Gaza, creating an unprecedented peaceful maritime demonstration."
+            },
+            {
+                "title": "Break the Blockade",
+                "icon": "Anchor",
+                "description": "Challenge the illegal blockade through peaceful resistance, bringing international attention to the humanitarian crisis and demanding open borders."
+            },
+            {
+                "title": "Global Unity",
+                "icon": "Users",
+                "description": "Build an international coalition of civil society organizations, activists, and supporters committed to justice and human rights."
+            }
+        ]
+    },
+    "map": {
+        "title": "Global Departure Points",
+        "description": "Ships from around the world will depart from these locations to join the historic flotilla to Gaza.",
+        "locations": [
+            {
+                "id": 1,
+                "country": "United Kingdom",
+                "ships": 0,
+                "status": "Organizing",
+                "statusColor": "bg-green-100 text-green-800",
+                "lat": 50.8198,
+                "lng": -1.088,
+                "color": "red",
+                "joinLink": "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866"
+            },
+            {
+                "id": 2,
+                "country": "France",
+                "ships": 5,
+                "status": "Preparing",
+                "statusColor": "bg-blue-100 text-blue-800",
+                "lat": 43.2965,
+                "lng": 5.3698,
+                "color": "green",
+                "joinLink": "https://thousandmadleens.fr/"
+            },
+            {
+                "id": 3,
+                "country": "Malaysia",
+                "ships": 0,
+                "status": "Planning",
+                "statusColor": "bg-yellow-100 text-yellow-800",
+                "lat": 3.0044,
+                "lng": 101.3997,
+                "color": "black",
+                "joinLink": "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866"
+            },
+            {
+                "id": 4,
+                "country": "Turkey",
+                "ships": 0,
+                "status": "Ready",
+                "statusColor": "bg-green-100 text-green-800",
+                "lat": 41.0082,
+                "lng": 28.9784,
+                "color": "red",
+                "joinLink": "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866"
+            },
+            {
+                "id": 5,
+                "country": "Spain",
+                "ships": 0,
+                "status": "Organizing",
+                "statusColor": "bg-yellow-100 text-yellow-800",
+                "lat": 41.3851,
+                "lng": 2.1734,
+                "color": "green",
+                "joinLink": "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866"
+            },
+            {
+                "id": 6,
+                "country": "Norway",
+                "ships": 0,
+                "status": "Planning",
+                "statusColor": "bg-blue-100 text-blue-800",
+                "lat": 59.9139,
+                "lng": 10.7522,
+                "color": "black",
+                "joinLink": "https://linktr.ee/thousand.madleens?lt_utm_source=lt_share_link#483563866"
+            }
+        ],
+        "callToAction": {
+            "title": "Join the Global Fleet",
+            "description": "Is your country organizing ships for the flotilla? Contact us to add your departure location to our global map and coordinate with the international fleet.",
+            "buttons": [
+                {
+                    "label": "Register Departure Point",
+                    "href": "https://thousandmadleensinternational.gogocarto.fr/map#/carte/@46.32,-0.68,6z?cat=all",
+                    "icon": "Ship"
+                },
+                {
+                    "label": "View All Locations",
+                    "href": "https://thousandmadleensinternational.gogocarto.fr/map#/carte/@46.32,-0.68,6z?cat=all",
+                    "icon": "MapPin"
+                }
+            ]
+        },
+        "registerButton": {
+            "label": "Register Your Ship",
+            "href": "https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/",
+            "description": "Add your departure location"
+        }
+    },
+    "advocacy": {
+        "title": "Raise Your Voice",
+        "description": "Contact your elected representatives and those in power to support our peaceful mission.",
+        "cards": [
+            {
+                "title": "Contact Representatives",
+                "icon": "Megaphone",
+                "description": "Find and contact your local representatives with our advocacy toolkit.",
+                "buttons": [
+                    {
+                        "label": "Find My Representatives",
+                        "style": "primary"
+                    },
+                    {
+                        "label": "Download Advocacy Kit",
+                        "style": "outline"
+                    }
+                ]
+            },
+            {
+                "title": "Letter Templates",
+                "icon": "MessageSquare",
+                "description": "Pre-written letters to government officials and international bodies.",
+                "buttons": [
+                    {
+                        "label": "Download Letters",
+                        "style": "primary"
+                    },
+                    {
+                        "label": "Customize Template",
+                        "style": "outline"
+                    }
+                ]
+            }
+        ]
+    },
+    "roles": {
+        "title": "How You Can Contribute",
+        "description": "Different roles for different skills - everyone has a part to play in this historic mission.",
+        "tabs": [
+            {
+                "id": "sailors",
+                "label": "Sailors",
+                "title": "Sailors & Crew",
+                "subtitle": "Experienced maritime professionals and volunteers",
+                "icon": "Ship",
+                "color": "text-green-700",
+                "requirements": [
+                    "Maritime experience preferred",
+                    "Valid passport and documentation",
+                    "Commitment to peaceful resistance",
+                    "Physical fitness for sea voyage"
+                ],
+                "responsibilities": [
+                    "Ship operations and maintenance",
+                    "Safety protocols and procedures",
+                    "Coordination with flotilla",
+                    "Media and documentation support"
+                ],
+                "applyLink": "https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/",
+                "buttonLabel": "Apply as Sailor",
+                "buttonStyle": "bg-green-600 hover:bg-green-700"
+            },
+            {
+                "id": "navigators",
+                "label": "Navigators",
+                "title": "Navigators & Technical",
+                "subtitle": "Navigation, communications, and technical specialists",
+                "icon": "Anchor",
+                "color": "text-green-700",
+                "requirements": [
+                    "Navigation or technical certification",
+                    "GPS and communication systems experience",
+                    "International waters knowledge",
+                    "Emergency response training"
+                ],
+                "responsibilities": [
+                    "Route planning and coordination",
+                    "Inter-ship communications",
+                    "Weather monitoring and safety",
+                    "Technical equipment maintenance"
+                ],
+                "applyLink": "https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/",
+                "buttonLabel": "Apply as Navigator",
+                "buttonStyle": "bg-green-600 hover:bg-green-700"
+            },
+            {
+                "id": "officials",
+                "label": "Officials",
+                "title": "Officials & Coordinators",
+                "subtitle": "Legal, diplomatic, and organizational leadership",
+                "icon": "Users",
+                "color": "text-black",
+                "requirements": [
+                    "Legal or diplomatic background",
+                    "International law knowledge",
+                    "Multi-language capabilities",
+                    "Crisis management experience"
+                ],
+                "responsibilities": [
+                    "Legal compliance and documentation",
+                    "Government and media relations",
+                    "International coordination",
+                    "Strategic planning and oversight"
+                ],
+                "applyLink": "https://cryptpad.fr/form/#/2/form/view/7m7vHUcI3SSjvTUM5Jckhlgta5egIyZIGbYIZN1cbgo/",
+                "buttonLabel": "Apply as Official",
+                "buttonStyle": "bg-black hover:bg-gray-800 text-white"
+            },
+            {
+                "id": "citizens",
+                "label": "Citizens",
+                "title": "Citizens & Supporters",
+                "subtitle": "Ground support, advocacy, and community organizing",
+                "icon": "Heart",
+                "color": "text-green-700",
+                "requirements": [
+                    "Fundraising and donations",
+                    "Social media advocacy",
+                    "Local event organization",
+                    "Community outreach"
+                ],
+                "responsibilities": [
+                    "Public awareness campaigns",
+                    "Political pressure and lobbying",
+                    "Solidarity events and demonstrations",
+                    "Educational workshops"
+                ],
+                "applyLink": "https://t.me/+zSh_jAhFQZ1iNTNk",
+                "buttonLabel": "Join as Supporter",
+                "buttonStyle": "bg-green-600 hover:bg-green-700"
+            }
+        ]
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Common questions about the 1000 Madleens to Gaza campaign.",
+        "questions": [
+            {
+                "question": "What is the 1000 Madleens to Gaza campaign?",
+                "answer": "The 1000 Madleens to Gaza is a global civil society campaign aiming to organize a massive maritime flotilla of 1000 ships from many nations worldwide. The campaign seeks to break the blockade of Gaza through peaceful, coordinated international action, inspired by the recent voyage of the vessel \"Madleen.\""
+            },
+            {
+                "question": "How will the flotilla be organized?",
+                "answer": "Ships from participating nations will converge at a designated meeting point near Palestine before jointly sailing toward Gaza. The operation will be coordinated through international civil society organizations, with careful attention to maritime law, safety protocols, and peaceful resistance principles."
+            },
+            {
+                "question": "Is this a peaceful mission?",
+                "answer": "Yes, absolutely. The 1000 Madleens to Gaza campaign is committed to peaceful resistance and non-violent action. All participants must agree to strict non-violence protocols, and the mission operates within the framework of international law and civil disobedience."
+            },
+            {
+                "question": "How can I participate if I'm not a sailor?",
+                "answer": "There are many ways to support the campaign: financial donations, organizing local support groups, advocacy with elected representatives, social media campaigns, fundraising events, and spreading awareness in your community. Every form of support contributes to the mission's success."
+            },
+            {
+                "question": "What are the legal implications?",
+                "answer": "The campaign operates within international maritime law and the principles of civil disobedience. Participants are informed of potential legal risks, and the campaign works with legal experts to ensure compliance with international law while challenging what we consider to be an illegal blockade."
+            },
+            {
+                "question": "When will the flotilla sail?",
+                "answer": "The timeline depends on successful coordination of ships, crews, and international support. Updates on timing will be provided through our official channels as planning progresses. Safety and thorough preparation are prioritized over speed."
+            }
+        ]
+    },
+    "news": {
+        "title": "Latest News",
+        "description": "Stay updated with the latest developments in our mission to Gaza",
+        "articles": [
+            {
+                "id": 1,
+                "title": "THE 1000 FLOTILLA INITIATIVE TO BREAK THE SIEGE",
+                "image": "https://mapim.org.my/wp-content/uploads/2025/06/THE-1000-FLOTILLA-INITIATIVE-TO-BREAK-THE-SIEGE-1200x480.png",
+                "description": "A comprehensive look at the ambitious campaign to organize 1000 ships from around the world in solidarity with Gaza, breaking the blockade through peaceful maritime resistance.",
+                "source": "MAPIM",
+                "sourceIcon": "MapPin",
+                "badge": "Breaking News",
+                "badgeColor": "bg-green-600",
+                "borderColor": "border-green-200",
+                "buttonColor": "border-green-600 text-green-600 hover:bg-green-50",
+                "link": "https://mapim.org.my/2025/06/13/the-1000-flotilla-initiative-to-break-the-siege/"
+            },
+            {
+                "id": 2,
+                "title": "A Thousand Madleens: New Civilian Fleet Readies to Defy Israeli Blockade",
+                "image": "https://qudsnen.co/wp-content/uploads/2025/06/IMG_5537-780x432.jpeg",
+                "description": "International civil society prepares an unprecedented maritime flotilla as civilians worldwide unite to challenge the blockade of Gaza through coordinated peaceful action.",
+                "source": "Quds News",
+                "sourceIcon": "Globe",
+                "badge": "Featured",
+                "badgeColor": "bg-green-600",
+                "borderColor": "border-green-200",
+                "buttonColor": "border-green-600 text-green-600 hover:bg-green-50",
+                "link": "https://qudsnen.co/a-thousand-madleens-new-civilian-fleet-readies-to-defy-israeli-blockade/"
+            },
+            {
+                "id": 3,
+                "title": "Swindon Fete to Fund Aid Volunteer's Gaza Flotilla Journey",
+                "image": "https://unsplash.com/photos/D9lCSvUcErk/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzU1MzUxMDk5fA&force=true&w=640",
+                "description": "A summer fete by Swindon Palestine Solidarity aims to raise funds for volunteer Liaquth Ali's participation in the 'A Thousand Madleens to Gaza' flotilla, featuring family-friendly activities and cultural events.",
+                "source": "Local Community",
+                "sourceIcon": "Users",
+                "badge": "Community",
+                "badgeColor": "bg-blue-600",
+                "borderColor": "border-blue-200",
+                "buttonColor": "border-blue-600 text-blue-600 hover:bg-blue-50",
+                "link": "#"
+            },
+            {
+                "id": 4,
+                "title": "Flotilla for Palestine: Support Center for Gaza Opens in Nice",
+                "image": "https://www.nice-premium.com/wp-content/uploads/2025/08/image-57-1068x601.jpg",
+                "description": "Thousand Madleens Nice opens its doors as a support center following the return of the Madleen crew and Soumoud caravan, establishing a base for raising awareness about the Gaza flotilla movement.",
+                "source": "Nice Premium",
+                "sourceIcon": "MapPin",
+                "badge": "Local News",
+                "badgeColor": "bg-purple-600",
+                "borderColor": "border-purple-200",
+                "buttonColor": "border-purple-600 text-purple-600 hover:bg-purple-50",
+                "link": "#"
+            },
+            {
+                "id": 5,
+                "title": "'Thousand Ship Flotilla' Announced to Challenge Israel's Gaza Blockade",
+                "image": "https://i0.wp.com/www.middleeastmonitor.com/wp-content/uploads/2025/06/GettyImages-2218796600.jpg?fit=920%2C613&ssl=1",
+                "description": "Malaysian civil society coalition led by MAPIM announces the largest maritime mobilization of its kind, aiming to send vessels from across the globe carrying humanitarian aid to Gaza in defiance of Israel's naval embargo.",
+                "source": "Middle East Monitor",
+                "sourceIcon": "Globe",
+                "badge": "Major Announcement",
+                "badgeColor": "bg-red-600",
+                "borderColor": "border-red-200",
+                "buttonColor": "border-red-600 text-red-600 hover:bg-red-50",
+                "link": "#"
+            }
+        ]
+    },
+    "socialMedia": {
+        "title": "Follow Our Journey",
+        "description": "Stay updated with the latest news, ship registrations, and campaign progress across all our social platforms.",
+        "platforms": [
+            {
+                "name": "TikTok",
+                "icon": "RiTiktokLine",
+                "href": "https://tiktok.com/@thousandmadleentogaza",
+                "description": "Short Videos",
+                "color": "text-black-400"
+            },
+            {
+                "name": "Twitter",
+                "icon": "Twitter",
+                "href": "https://x.com/1kMadleentoGaza",
+                "description": "Live Updates",
+                "color": "text-blue-400"
+            },
+            {
+                "name": "Instagram",
+                "icon": "Instagram",
+                "href": "https://www.instagram.com/thousandmadleenstogaza/?utm_source=ig_web_button_share_sheet",
+                "description": "Behind Scenes",
+                "color": "text-pink-400"
+            },
+            {
+                "name": "Telegram",
+                "icon": "RiTelegram2Line",
+                "href": "https://t.me/+zSh_jAhFQZ1iNTNk",
+                "description": "Community",
+                "color": "text-blue-400"
+            }
+        ],
+        "shareSection": {
+            "title": "Share Our Mission",
+            "buttons": [
+                {
+                    "label": "Copy Message",
+                    "shortLabel": "Copy",
+                    "icon": "Clipboard",
+                    "action": "copy"
+                },
+                {
+                    "label": "Share via Email",
+                    "shortLabel": "Email",
+                    "icon": "Mail",
+                    "action": "email"
+                },
+                {
+                    "label": "Download Graphics",
+                    "shortLabel": "Graphics",
+                    "icon": "ExternalLink",
+                    "href": "https://drive.google.com/drive/folders/1PlywKwfu7Ad4JZKzGdLuvtF8Rk3M-riu"
+                }
+            ]
+        }
+    },
+    "disclaimer": {
+        "title": "Important Disclaimer",
+        "subtitle": "Legal and Safety Notice",
+        "icon": "AlertTriangle",
+        "points": [
+            {
+                "title": "Peaceful Mission",
+                "description": "The 1000 Madleens to Gaza campaign is committed to peaceful, non-violent resistance. All participants must agree to strict non-violence protocols."
+            },
+            {
+                "title": "Legal Risks",
+                "description": "Participants should be aware that this mission may involve legal risks, including potential detention or legal proceedings. We recommend consulting with legal counsel before participating."
+            },
+            {
+                "title": "Safety First",
+                "description": "Maritime operations carry inherent risks. All vessels must meet safety standards, and participants must have appropriate maritime experience or training."
+            },
+            {
+                "title": "International Law",
+                "description": "This campaign operates within the framework of international maritime law and the principles of civil disobedience in challenging what we consider to be violations of international law."
+            },
+            {
+                "title": "Independent Participation",
+                "description": "Participation in this campaign is voluntary and at your own risk. The campaign organizers cannot be held responsible for individual decisions or consequences."
+            }
+        ]
+    },
+    "footer": {
+        "logo": {
+            "src": "navbar_logo_no_bg.png",
+            "alt": "1000 Madleens to Gaza Logo"
+        },
+        "description": "Breaking the blockade through peaceful solidarity and international cooperation.",
+        "sections": [
+            {
+                "title": "Quick Links",
+                "links": [
+                    {
+                        "label": "Mission",
+                        "href": "#mission"
+                    },
+                    {
+                        "label": "Goals",
+                        "href": "#goals"
+                    },
+                    {
+                        "label": "Get Involved",
+                        "href": "#get-involved"
+                    },
+                    {
+                        "label": "FAQ",
+                        "href": "#faq"
+                    }
+                ]
+            },
+            {
+                "title": "Get Involved",
+                "links": [
+                    {
+                        "label": "Donate",
+                        "href": "https://chuffed.org/project/138012-a-thousand-madleens-to-gaza"
+                    },
+                    {
+                        "label": "Join Movement",
+                        "href": "https://linktr.ee/thousand.madleens"
+                    },
+                    {
+                        "label": "Telegram",
+                        "href": "https://t.me/+zSh_jAhFQZ1iNTNk"
+                    },
+                    {
+                        "label": "Resources",
+                        "href": "https://drive.google.com/drive/folders/1PlywKwfu7Ad4JZKzGdLuvtF8Rk3M-riu"
+                    }
+                ]
+            }
+        ],
+        "socialLinks": [
+            {
+                "platform": "Instagram",
+                "href": "https://www.instagram.com/thousandmadleenstogaza/?utm_source=ig_web_button_share_sheet",
+                "icon": "Instagram"
+            },
+            {
+                "platform": "Twitter",
+                "href": "https://x.com/1kMadleentoGaza",
+                "icon": "Twitter"
+            },
+            {
+                "platform": "TikTok",
+                "href": "https://tiktok.com/@thousandmadleentogaza",
+                "icon": "RiTiktokLine"
+            },
+            {
+                "platform": "Telegram",
+                "href": "https://t.me/+zSh_jAhFQZ1iNTNk",
+                "icon": "RiTelegram2Line"
+            }
+        ],
+        "copyright": {
+            "text": "1000 Madleens to Gaza Campaign. All rights reserved.",
+            "links": [
+                {
+                    "label": "Privacy Policy",
+                    "href": "#"
+                },
+                {
+                    "label": "Terms of Service",
+                    "href": "#"
+                }
+            ]
+        }
+    }
+}
